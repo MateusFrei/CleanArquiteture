@@ -1,10 +1,10 @@
 import { Produtos_Controller } from "../controller/produtos_Controller";
-import { DadosRepository } from "../repository/dados_repository";
+import { ProdutosRepository } from "../repository/produtos_repository";
 import { ProdutosUseCase } from "../use_cases/produtos_usecase";
 
 
 function criaRepositoryFactory() {
-    const repo = new DadosRepository();
+    const repo = new ProdutosRepository();
     return repo;
 }
 
